@@ -18,8 +18,8 @@ yarn workspace contracts run hardhat ignition deploy ./ignition/modules/SimpleSt
 ...
 ```
 
-[!TIP]
-The `dev` command will watch for changes in the contracts and regenerate the ABI and deploy the contracts to the network.
+> [!TIP]
+> The `dev` command will watch for changes in the contracts and regenerate the ABI and deploy the contracts to the network.
 
 # Notes
 The development frontend server will be available at `http://localhost:3000`.
