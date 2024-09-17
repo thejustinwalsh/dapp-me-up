@@ -1,0 +1,38 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev & chokidar \"../contracts/ignition/deployments/**/*.json\" -c \"yarn run generate\"",
+    "generate": "wagmi generate",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.45.1",
+    "chokidar-cli": "^3.0.0",
+    "hardhat": "^2.22.10",
+    "next": "14.2.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "latest",
+    "wagmi": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.10",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@wagmi/cli": "latest",
+    "bufferutil": "^4.0.8",
+    "chokidar": "^4.0.0",
+    "encoding": "^0.1.13",
+    "lokijs": "^1.5.12",
+    "nextjs-node-loader": "^1.1.5",
+    "pino-pretty": "^10.3.1",
+    "supports-color": "8.1.1",
+    "ts-node": "^10.8.0",
+    "typescript": "^5.4.5",
+    "utf-8-validate": "^5.0.2"
+  }
+}

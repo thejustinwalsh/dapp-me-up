@@ -1,0 +1,20 @@
+{
+  "name": "dapp-me-up",
+  "version": "0.0.1",
+  "description": "dApps",
+  "type": "commonjs",
+  "author": "Justin Walsh",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "compile": "yarn workspace contracts run compile",
+    "dev": "yarn workspaces foreach -p -v -i run dev",
+    "generate": "yarn workspace app run generate",
+    "network": "yarn workspace contracts hardhat node",
+    "test": "yarn workspaces foreach -A run test"
+  },
+  "packageManager": "yarn@4.5.0"
+}
